@@ -2,10 +2,11 @@
 <html lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="あなたの合言葉" />
+    <!-- ↓ここにGoogleサーチコンソールの合言葉がある場合は残してください -->
+    <meta name="google-site-verification" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
+    <!-- SEO Meta Tags (検索エンジン向け設定) -->
     <title>白金の深層強圧リンパ＆組織間リリース | Private Salon Chianty</title>
     <meta name="description" content="東京・白金の男性セラピストによるプライベートサロンChianty（シャンティ）。歴10年の「深層強圧リンパ」と「組織間リリース」で、自律神経×痩身×不調改善を同時に叶えます。恵比寿・広尾からもアクセス良好。">
     <meta name="keywords" content="白金,リンパマッサージ,強圧,男性セラピスト,組織間リリース,痩身,小顔,恵比寿,広尾,港区">
@@ -13,8 +14,8 @@
     <!-- OGP (SNSシェア時の表示設定) -->
     <meta property="og:title" content="白金の深層強圧リンパ | Private Salon Chianty">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chianty-website.vercel.app/"> <!-- ※後で実際のURLに書き換えてください -->
-    <meta property="og:image" content="https://chianty-website.vercel.app/chiantytop.jpg"> <!-- ※後で実際のURLに書き換えてください -->
+    <meta property="og:url" content="https://[あなたのユーザー名].github.io/chianty-hp/"> <!-- ※公開後に自動で反映されますが、決まれば書き換えてもOK -->
+    <meta property="og:image" content="chiantytop.jpg">
     <meta property="og:description" content="貴女の努力の、最終地点。マニュアルを否定する職人の手技で、深層から身体を変えます。">
     <meta property="og:site_name" content="Private Salon Chianty">
     <meta property="og:locale" content="ja_JP">
@@ -54,13 +55,14 @@
         }
     </script>
 
-    <!-- Structured Data (JSON-LD) for Local Business SEO -->
+    <!-- MEO対策：構造化データ (JSON-LD) -->
+    <!-- これを入れることで、Googleマップや検索結果にお店として正しく認識されます -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BeautySalon",
       "name": "Private Salon Chianty",
-      "image": "https://chianty-website.vercel.app/chiantytop.jpg",
+      "image": "chiantytop.jpg",
       "description": "白金の深層強圧リンパ＆組織間リリース専門サロン。男性セラピストによる職人技で根本改善。",
       "address": {
         "@type": "PostalAddress",
@@ -75,8 +77,6 @@
         "latitude": 35.6450, 
         "longitude": 139.7230
       },
-      "url": "https://chianty-website.vercel.app/",
-      "telephone": "", 
       "priceRange": "¥8,800 - ¥18,000",
       "openingHoursSpecification": [
         {
@@ -169,7 +169,7 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-12 max-w-5xl mx-auto">
                 <div class="w-full md:w-1/2 h-80 md:h-96 relative">
-                    <img src="chianty1.jpg" alt="深層強圧リンパマッサージの施術風景" class="w-full h-full object-cover shadow-xl grayscale-[20%]" onerror="this.src='https://placehold.co/600x400?text=Deep+Lymph';">
+                    <img src="kennkoukotu.jpg" alt="深層強圧リンパマッサージの施術風景" class="w-full h-full object-cover shadow-xl grayscale-[20%]" onerror="this.src='https://placehold.co/600x400?text=Deep+Lymph';">
                     <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-gold-100 -z-10"></div>
                 </div>
                 <div class="w-full md:w-1/2">
@@ -193,7 +193,7 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row-reverse items-center gap-12 max-w-5xl mx-auto">
                 <div class="w-full md:w-1/2 h-80 md:h-96 relative">
-                    <img src="chianty2.jpg" alt="組織間リリースによる癒着剥がし" class="w-full h-full object-cover shadow-xl grayscale-[20%]" onerror="this.src='https://placehold.co/600x400?text=Release';">
+                    <img src="sakotu.jpg" alt="組織間リリースによる癒着剥がし" class="w-full h-full object-cover shadow-xl grayscale-[20%]" onerror="this.src='https://placehold.co/600x400?text=Release';">
                     <div class="absolute -top-6 -left-6 w-32 h-32 bg-gray-100 -z-10"></div>
                 </div>
                 <div class="w-full md:w-1/2">
@@ -340,7 +340,7 @@
         </div>
     </section>
 
-    <!-- System -->
+    <!-- Membership System (4 Columns: Time Order) -->
     <section id="system" class="py-20 bg-greige">
         <div class="container mx-auto px-6 max-w-6xl"> 
             <div class="text-center mb-16">
@@ -364,6 +364,7 @@
             <div class="bg-white p-6 md:p-10 shadow-sm rounded-sm">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-stretch">
                     
+                    <!-- 1. Within 10 Days -->
                     <div class="text-center flex flex-col">
                         <div class="border-2 border-gold-600 p-6 h-full flex flex-col justify-center bg-gradient-to-br from-white to-gold-100 relative shadow-lg transform scale-105 md:scale-105 z-10">
                              <div class="md:hidden absolute -top-3 left-1/2 transform -translate-x-1/2 text-gold-600"><i class="fas fa-chevron-down"></i></div>
@@ -374,6 +375,7 @@
                         </div>
                     </div>
 
+                    <!-- 2. Within 20 Days -->
                     <div class="text-center flex flex-col">
                         <div class="border-2 border-gold-400 p-6 h-full flex flex-col justify-center bg-gold-50/30 relative">
                              <div class="md:hidden absolute -top-3 left-1/2 transform -translate-x-1/2 text-gold-400"><i class="fas fa-chevron-down"></i></div>
@@ -384,6 +386,7 @@
                         </div>
                     </div>
 
+                    <!-- 3. Member Price -->
                     <div class="text-center flex flex-col">
                         <div class="border border-gold-200 p-6 h-full flex flex-col justify-center bg-white relative">
                              <div class="md:hidden absolute -top-3 left-1/2 transform -translate-x-1/2 text-gold-400"><i class="fas fa-chevron-down"></i></div>
@@ -392,6 +395,7 @@
                         </div>
                     </div>
 
+                    <!-- 4. Regular Price -->
                     <div class="text-center opacity-70 flex flex-col">
                         <div class="border border-gray-300 p-6 h-full flex flex-col justify-center bg-gray-50">
                             <p class="text-xs text-gray-500 mb-2">それ以降</p>
@@ -442,7 +446,7 @@
         </div>
     </section>
 
-    <!-- Access -->
+    <!-- Access & Info -->
     <section id="access" class="py-20 bg-greige">
         <div class="container mx-auto px-6 max-w-4xl">
             <div class="text-center mb-12">
@@ -484,12 +488,13 @@
                         </div>
                         <div class="flex border-b border-gray-100 pb-2">
                             <dt class="w-24 font-bold text-gray-500">支払い</dt>
-                            <dd>現金 / クレジットカード / 交通系IC / PayPay 等</dd>
+                            <dd>現金 / クレジットカード（VISA, Master, JCB, Amex, Diners）/ 交通系IC / PayPay / iD / QUICPay / Apple Pay 等</dd>
                         </div>
                     </dl>
                 </div>
                 <div class="w-full md:w-1/2 h-64 bg-gray-200 relative">
                     <div class="absolute inset-0 flex items-center justify-center text-gray-500 text-xs">
+                        <!-- 詳細住所(グランパレス白金)の地図 -->
                         <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://maps.google.com/maps?q=東京都港区白金5-13-10&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
                     </div>
                 </div>
@@ -497,10 +502,12 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white py-8 text-center text-xs tracking-widest">
         <p>&copy; Private Salon Chianty. All Rights Reserved.</p>
     </footer>
 
+    <!-- Mobile Button -->
     <div class="fixed bottom-0 w-full bg-white border-t border-gray-200 p-4 md:hidden z-50 flex justify-center shadow-[0_-5px_15px_rgba(0,0,0,0.1)]">
         <a href="https://beauty.hotpepper.jp/kr/slnH000500729/coupon/" target="_blank" rel="noopener noreferrer" class="w-full bg-gold-600 text-white text-center py-3 font-bold tracking-widest shadow-md rounded-sm">
             ご予約はこちら
